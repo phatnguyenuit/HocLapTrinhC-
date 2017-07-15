@@ -38,5 +38,6 @@ int main()
 
 	/*
 	OK BT đúng rồi !
+	Ok sync về đi
 	*/
 }
