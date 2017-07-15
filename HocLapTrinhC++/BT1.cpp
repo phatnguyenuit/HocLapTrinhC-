@@ -34,4 +34,9 @@ int main()
 		cout << "Ban co muon tiep tuc ko?";
 		cin >> tieptuc;
 	} while (tieptuc != 0);
+
+
+	/*
+	OK BT đúng rồi !
+	*/
 }
