@@ -27,5 +27,8 @@
     <ClCompile Include="BT1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BT1-nhanxet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
