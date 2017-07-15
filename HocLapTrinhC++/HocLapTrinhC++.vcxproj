@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BT1-nhanxet.cpp" />
     <ClCompile Include="BT1.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="iostream.cpp" />
