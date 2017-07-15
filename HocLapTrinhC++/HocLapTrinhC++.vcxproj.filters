@@ -36,5 +36,8 @@
     <ClCompile Include="Phanso-nhanxet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hocsinh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
