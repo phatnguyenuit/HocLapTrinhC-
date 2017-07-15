@@ -36,17 +36,19 @@ Cách lưu file code dưới dạng tiếng việt có dấu : vào File -> Adva
 	 hoặc dùng xen kẽ với cout như dùng xen kẽ printf và scanf
 	 cout << "Nhap vao a : ";
 	 cin >> a;
+
+	 +B5 Sử dụng cerr để log ra tin nhắn lỗi
 */
 
-//void main() {
-//	int a;
-//	float b;
-//	double c;
-//	char d;
-//	cout << "Hello World!" << endl;
-//	//cin >> a >> b >> c >> d;
-//	//cout << a << b << c << d;
-//	cin >> a;
-//	cout << a << endl;
-//
-//}
+/*void main() {
+	int a;
+	float b;
+	double c;
+	char d;
+	cerr << "Hello World!" << endl;
+	//cin >> a >> b >> c >> d;
+	//cout << a << b << c << d;
+	cin >> a;
+	cout << a << endl;
+
+}*/

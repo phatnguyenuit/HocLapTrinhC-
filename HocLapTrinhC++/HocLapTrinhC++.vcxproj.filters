@@ -21,5 +21,8 @@
     <ClCompile Include="hello.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
