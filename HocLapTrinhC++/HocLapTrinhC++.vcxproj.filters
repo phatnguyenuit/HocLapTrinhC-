@@ -18,5 +18,8 @@
     <ClCompile Include="iostream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hello.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

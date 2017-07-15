@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
-
+/**
+Các định dạng của các kiểu dữ liệu cơ bản trong C/C++
+int %d;
+long %ld;
+float %f;
+double %lf;
+char %c;
+char[] %s;
+*/
 /**
 Cách lưu file code dưới dạng tiếng việt có dấu : vào File -> Advanced Save Option 
 -> chọn kiểu encoding 'Unicode' code page 65001
@@ -30,13 +38,15 @@ Cách lưu file code dưới dạng tiếng việt có dấu : vào File -> Adva
 	 cin >> a;
 */
 
-void main() {
-	int a;
-	float b;
-	double c;
-	char d;
-	cout << "Hello World!" << endl;
-	//cin >> a >> b >> c >> d;
-	//cout << a << b << c << d;
-
-}
+//void main() {
+//	int a;
+//	float b;
+//	double c;
+//	char d;
+//	cout << "Hello World!" << endl;
+//	//cin >> a >> b >> c >> d;
+//	//cout << a << b << c << d;
+//	cin >> a;
+//	cout << a << endl;
+//
+//}
