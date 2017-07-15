@@ -150,6 +150,7 @@
     <ClCompile Include="BT1.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="iostream.cpp" />
+    <ClCompile Include="Phanso-nhanxet.cpp" />
     <ClCompile Include="Phanso.cpp" />
     <ClCompile Include="string.cpp" />
   </ItemGroup>
