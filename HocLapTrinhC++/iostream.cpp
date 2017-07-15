@@ -10,7 +10,7 @@ Cách lưu file code dưới dạng tiếng việt có dấu : vào File -> Adva
 	 Sử dụng thư viện <iostream> để thực hiện nhập xuất tương tự với prinf và scanf
 	 thư viện <iostream> hỗ trợ nhập xuất tương tự <stdio.h> 
 	 prinf -> cout
-	 scsnf -> cin
+	 scanf -> cin
 	 _Các bước để sử dụng thư viện nhập xuất  với <iostream>
 	 +B1 : Include thư viện với từ khoá #include <iostream>
 	 +B2 : Tiếp tục khai báo sau câu #include : using namespace std;
