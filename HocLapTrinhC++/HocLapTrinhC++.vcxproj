@@ -152,6 +152,7 @@
     <ClCompile Include="iostream.cpp" />
     <ClCompile Include="Phanso-nhanxet.cpp" />
     <ClCompile Include="Phanso.cpp" />
+    <ClCompile Include="string-example-with-cin-ignore.cpp" />
     <ClCompile Include="string.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
