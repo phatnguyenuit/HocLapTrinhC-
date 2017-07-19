@@ -18,9 +18,6 @@
     <ClCompile Include="iostream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hello.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,6 +34,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="string-example-with-cin-ignore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sophuc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sophuc-nhanxet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
