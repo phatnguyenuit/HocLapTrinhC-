@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 /**
 Các định dạng của các kiểu dữ liệu cơ bản trong C/C++
 int %d;
