@@ -42,5 +42,8 @@
     <ClCompile Include="Sophuc-nhanxet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mang-2-chieu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
