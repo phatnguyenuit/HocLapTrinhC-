@@ -66,56 +66,56 @@ const int socot = 2;
 #include <iostream>
 using namespace std;
 
-void main() {
-	//khai báo tường minh
-	int matran[sodong][socot];
-
-	//khai báo không tường minh
-	typedef int matrix[sodong][socot];
-	matrix mt;
-
-	//khai báo dạng con trỏ
-	int *p[sodong]; //mảng con trỏ 1 chiều 
-	int **max; // con trỏ 2 chiều
-
-	//Khởi tạo mảng 2 chiều bằng mảng con trỏ 1 chiều
-	for (int i = 0; i < sodong; i++)
-		p[i] = new int[socot];
-
-	//khởi tạo mảng 2 chiều bằng con trỏ 2 chiều
-	max = new int* [sodong];
-	for (int i = 0; i < sodong; i++)
-		max[i] = new int[socot];
-
-	//cách sử dụng mảng 2 chiều để nhập xuất tương tự với kiểu khai báo mảng 2 chiều tường minh
-
-	//nhập ma trận matran
-	for (int i = 0; i < sodong; i++) {
-		for (int j = 0; j < socot; j++) {
-			matran[i][j] = 100; // gán giá trị cho phần tử thứ ij bằng 100;
-		}
-	}
-
-	//nhập ma trận mt 
-	for (int i = 0; i < sodong; i++) {
-		for (int j = 0; j < socot; j++) {
-			mt[i][j] = 200; // gán giá trị cho phần tử thứ ij bằng 100;
-		}
-	}
-
-	cout << "=======================================================" << endl;
-	cout << "Xuat mang 2 chieu khai bao tuong minh matran[" << sodong << " ][ " << socot << " ]" << endl;
-	for (int i = 0; i < sodong; i++) {
-		for (int j = 0; j < socot; j++) {
-			cout << "matran[ " << i << " ][ " << j << " ] : " << matran[i][j] << endl;
-		}
-	}
-	cout << "=======================================================" << endl;
-	cout << "Xuat mang 2 chieu khai bao tuong minh mt" << endl;
-	for (int i = 0; i < sodong; i++) {
-		for (int j = 0; j < socot; j++) {
-			cout << "mt[ " << i << " ][ " << j << " ] : " << mt[i][j] << endl;
-		}
-	}
-	cout << "=======================================================" << endl;
-}
+//void main() {
+//	//khai báo tường minh
+//	int matran[sodong][socot];
+//
+//	//khai báo không tường minh
+//	typedef int matrix[sodong][socot];
+//	matrix mt;
+//
+//	//khai báo dạng con trỏ
+//	int *p[sodong]; //mảng con trỏ 1 chiều 
+//	int **max; // con trỏ 2 chiều
+//
+//	//Khởi tạo mảng 2 chiều bằng mảng con trỏ 1 chiều
+//	for (int i = 0; i < sodong; i++)
+//		p[i] = new int[socot];
+//
+//	//khởi tạo mảng 2 chiều bằng con trỏ 2 chiều
+//	max = new int* [sodong];
+//	for (int i = 0; i < sodong; i++)
+//		max[i] = new int[socot];
+//
+//	//cách sử dụng mảng 2 chiều để nhập xuất tương tự với kiểu khai báo mảng 2 chiều tường minh
+//
+//	//nhập ma trận matran
+//	for (int i = 0; i < sodong; i++) {
+//		for (int j = 0; j < socot; j++) {
+//			matran[i][j] = 100; // gán giá trị cho phần tử thứ ij bằng 100;
+//		}
+//	}
+//
+//	//nhập ma trận mt 
+//	for (int i = 0; i < sodong; i++) {
+//		for (int j = 0; j < socot; j++) {
+//			mt[i][j] = 200; // gán giá trị cho phần tử thứ ij bằng 100;
+//		}
+//	}
+//
+//	cout << "=======================================================" << endl;
+//	cout << "Xuat mang 2 chieu khai bao tuong minh matran[" << sodong << " ][ " << socot << " ]" << endl;
+//	for (int i = 0; i < sodong; i++) {
+//		for (int j = 0; j < socot; j++) {
+//			cout << "matran[ " << i << " ][ " << j << " ] : " << matran[i][j] << endl;
+//		}
+//	}
+//	cout << "=======================================================" << endl;
+//	cout << "Xuat mang 2 chieu khai bao tuong minh mt" << endl;
+//	for (int i = 0; i < sodong; i++) {
+//		for (int j = 0; j < socot; j++) {
+//			cout << "mt[ " << i << " ][ " << j << " ] : " << mt[i][j] << endl;
+//		}
+//	}
+//	cout << "=======================================================" << endl;
+//}

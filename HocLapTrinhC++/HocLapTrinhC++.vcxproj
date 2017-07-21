@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClCompile Include="BT1-nhanxet.cpp" />
     <ClCompile Include="BT1.cpp" />
+    <ClCompile Include="file-in-c++.cpp" />
     <ClCompile Include="iostream.cpp" />
     <ClCompile Include="mang-2-chieu.cpp" />
     <ClCompile Include="Phanso-nhanxet.cpp" />
