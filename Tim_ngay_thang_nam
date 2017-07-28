@@ -1,0 +1,281 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int Tim_ngay_ke_tiep(int ngay, int thang, int nam)
+{
+	int ngaytt;
+	if (thang == 2)
+	{
+		if ( (nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0 )
+		{
+			if (ngay < 29)
+			{
+				ngaytt = ngay + 1;
+			}
+			else if (ngay == 29)
+			{
+				ngaytt = 1;
+			}
+			else
+			{
+				ngaytt = 0;
+			}
+		}
+		else
+		{
+			if (ngay < 28)
+			{
+				ngaytt = ngay + 1;
+			}
+			else if (ngay == 28)
+			{
+				ngaytt = 1;
+			}
+			else
+			{
+				ngaytt = 0;
+			}
+		}
+	}
+	else if (thang == 4 || thang == 6 || thang == 9 || thang == 11)
+	{
+		if (ngay < 30)
+		{
+			ngaytt = ngay + 1;
+		}
+		else if (ngay == 30)
+		{
+			ngaytt = 1;
+		}
+		else
+		{
+			ngaytt = 0;
+		}
+	}
+	else
+	{
+		if (ngay < 31)
+		{
+			ngaytt = ngay + 1;
+		}
+		else if (ngay == 31)
+		{
+			ngaytt = 1;
+		}
+		else
+		{
+			ngaytt = 0;
+		}
+	}
+	return ngaytt;
+}
+int Tim_thang_ke_tiep( int ngay, int thang, int nam )
+{
+	int thangtt = thang;
+	if ( Tim_ngay_ke_tiep( ngay, thang, nam ) == 1 )
+	{
+		if (thang == 12)
+		{
+			thangtt = 1;
+		}
+		else
+		{
+			thangtt = thang + 1;
+		}
+	}
+	return thangtt;
+}
+int Tim_nam_ke_tiep( int ngay, int thang, int nam )
+{
+	int namtt = nam;
+	if (ngay == 31 && thang == 12)
+	{	
+		namtt = nam + 1;
+	}
+	return namtt;
+}
+int Tim_ngay_truoc( int ngay, int thang, int nam )
+{
+	int ngaytruoc;
+	if (thang == 2)
+	{
+		if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0)
+		{
+			if (ngay > 1 && ngay <= 29)
+			{
+				ngaytruoc = ngay - 1;
+			}
+			else if (ngay == 1)
+			{
+				ngaytruoc = 31;
+			}
+			else
+			{
+				ngaytruoc = 0;
+			}
+		}
+		else
+		{
+			if (ngay > 1 && ngay <= 28)
+			{
+				ngaytruoc = ngay - 1;
+			}
+			else if (ngay == 1)
+			{
+				ngaytruoc = 31;
+			}
+			else
+			{
+				ngaytruoc = 0;
+			}
+		}
+	}
+	else if (thang == 4 || thang == 6 || thang == 9 || thang == 11)
+	{
+		if (ngay > 1 && ngay <= 30)
+		{
+			ngaytruoc = ngay - 1;
+		}
+		else if (ngay == 1)
+		{
+			ngaytruoc = 31;
+		}
+		else
+		{
+			ngaytruoc = 0;
+		}
+	}
+	else
+	{
+		if (ngay > 1 && ngay <= 31)
+		{
+			ngaytruoc = ngay - 1;
+		}
+		else 
+		{
+			if (thang == 1)
+			{
+				ngaytruoc = 31;
+			}
+			else if (thang == 3)
+			{
+				if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0)
+				{
+					ngaytruoc = 29;
+				}
+				else
+				{
+					ngaytruoc = 28;
+				}
+			}
+			else if (thang == 5 || thang == 7 || thang == 10 || thang == 12 )
+			{
+				ngaytruoc = 30;
+			}
+			else
+			{
+				ngaytruoc = 31;
+			}
+		}
+	}
+	return ngaytruoc;
+}
+int Tim_thang_truoc( int ngay, int thang, int nam )
+{
+	int thangtruoc = thang;
+	if (thang == 3)
+	{
+		if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0)
+		{
+			if (Tim_ngay_truoc( ngay, thang, nam ) == 29)
+			{
+				thangtruoc = 2;
+			}
+		}
+		else
+		{
+			if (Tim_ngay_truoc( ngay, thang, nam ) == 28)
+			{
+				thangtruoc = 2;
+			}
+		}
+	}
+	else if (thang == 5 || thang == 7 || thang == 10)
+	{
+		if (Tim_ngay_truoc(ngay, thang, nam) == 30 )
+		{
+			thangtruoc = thang - 1;
+		}
+	}
+	else
+	{
+		if (thang != 1)
+		{
+			if (Tim_ngay_truoc( ngay, thang, nam ) == 31)
+			{
+				thangtruoc = thang - 1;
+			}
+		}
+		else
+		{
+			thangtruoc = 12;
+		}
+	}
+	return thangtruoc;
+}
+int Tim_nam_truoc( int ngay, int thang, int nam )
+{
+	int namtruoc = nam;
+	if (ngay == 1 && thang == 1)
+	{
+		namtruoc = nam - 1;
+	}
+	return namtruoc;
+}
+
+void main()
+{
+	int ngay, thang, nam;
+Bat_dau:
+	
+		system( "cls" );
+	Nhapngay:
+		printf( "Nhap vao ngay : " );
+		scanf_s( "%d", &ngay );
+		if (ngay <= 0 || ngay > 31)
+			goto Nhapngay;
+	Nhapthang:
+		printf( "Nhap vao thang : " );
+		scanf_s( "%d", &thang );
+		if (thang <= 0 || thang > 12)
+			goto Nhapthang;
+	Nhapnam:
+		printf( "Nhap vao nam : " );
+		scanf_s( "%d", &nam );
+		if (nam <= 1)
+			goto Nhapnam;
+		printf( "Ngay hien tai la : %d - %d - %d \n", ngay, thang, nam );
+
+		int ngayketiep = Tim_ngay_ke_tiep( ngay, thang, nam );
+		int thangketiep = Tim_thang_ke_tiep( ngay, thang, nam );
+	  int namketiep = Tim_nam_ke_tiep( ngay, thang, nam );
+	
+		int ngaytruoc = Tim_ngay_truoc( ngay, thang, nam );
+		int thangtruoc = Tim_thang_truoc( ngay, thang, nam );
+		int namtruoc = Tim_nam_truoc( ngay, thang, nam );
+
+		if (ngaytruoc == 0 || ngayketiep == 0)
+		{
+			printf( "Ngay ban nhap ko hop le. XIn liem tra lai !" );
+		}
+		else
+		{
+			printf( "Ngay truoc do la : %d - %d - %d \n", ngaytruoc, thangtruoc, namtruoc );
+			printf( "Ngay ke tiep la : %d - %d - %d \n", ngayketiep, thangketiep, namketiep );
+		}
+
+		_getch();
+		goto Bat_dau;
+}
