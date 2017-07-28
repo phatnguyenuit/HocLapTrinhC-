@@ -1,0 +1,103 @@
+#include <stdio.h>
+#include <conio.h>
+#include <Windows.h>
+#include <stdlib.h>
+#include <time.h>
+
+void main()
+{
+	int ban, may;
+	char choitiep;
+Newgame:
+	system( "cls" );
+	printf("\t\tTRO CHOI OAN TU XI\n\n");
+	printf("===========================================\n\n" );
+	printf("1.Keo\n" );
+	printf("2.Bua\n" );
+	printf("3.Bao\n\n" );
+	printf("===========================================\n\n" );
+	chon:
+	printf( "Nhap vao lua chon cua ban : " );
+	scanf_s( "%d", &ban );
+	if (ban != 1 && ban != 2 && ban != 3)
+		goto chon;
+	if (ban == 1)
+	printf( "Ban chon Keo\n" );
+	else if (ban == 2)
+		printf( "Ban chon Bua\n" );
+	else 
+		printf( "Ban chon Bao\n" );
+	srand( time( 0 ) );
+	may = 1 + rand() % (3);
+	printf( "Xin cho " );
+	Sleep( 1000 );
+	printf( "." );
+	Sleep( 1000 );
+	printf( "." ); Sleep( 1000 );
+	printf( "." );
+	switch (ban)
+	{
+	case 1:
+	{
+		if (may == 1) 
+		{
+			printf( "\nMay chon Keo" );
+			printf( "\nHoa nhau" );
+		}
+		else if (may == 2)
+		{
+			printf( "\nMay chon Bua" );
+			printf( "\nBan thua" );
+		}
+		else
+		{
+			printf( "\nMay chon Bao" );
+			printf( "\nBan thang" );
+		}	
+		break;
+	}
+	case 2:
+	{
+		if (may == 1)
+		{
+			printf( "\nMay chon Keo" );
+			printf( "\nBan thang" );
+		}
+		else if (may == 2)
+		{
+			printf( "\nMay chon Bua" );
+			printf( "\nHoa nhau" );
+		}
+		else
+		{
+			printf( "\nMay chon Bao" );
+			printf( "\nBan thua" );
+		}
+		break;
+	}case 3:
+	{
+		if (may == 1)
+		{
+			printf( "\nMay chon Keo" );
+			printf( "\nBan thua" );
+		}
+		else if (may == 2)
+		{
+			printf( "\nMay chon Bua" );
+			printf( "\nBan thang" );
+		}
+		else
+		{
+			printf( "\nMay chon Bao" );
+			printf( "\nHoa nhau" );
+		}
+		break;
+	}
+	}
+	printf( "\nBan co muon choi tiep ko? (y/n) " );
+	fflush( stdin );
+	scanf_s( "%c", &choitiep );
+	choitiep = _getch();
+	if (choitiep == 'y' || choitiep == 'Y')
+	goto Newgame;
+}
